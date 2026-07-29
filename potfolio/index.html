@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | BCS Student</title>
+    <meta name="description" content="Personal portfolio of a Bachelor of Computer Science student.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><span>&lt;</span>BCS<span>/&gt;</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero section-padding">
+            <div class="hero-content fade-in">
+                <h2 class="greeting">Hello World, I'm</h2>
+                <h1 class="name">A Future <span class="highlight">Software Engineer</span></h1>
+                <p class="subtitle">Bachelor of Computer Science Student</p>
+                <p class="description">
+                    Passionate about algorithms, software development, and building scalable applications. Constantly learning and exploring the endless possibilities of technology.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-1">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="keyword">const</span> student <span class="operator">=</span> {
+    name: <span class="string">'Your Name'</span>,
+    degree: <span class="string">'B.Sc. Computer Science'</span>,
+    passionateAbout: [<span class="string">'Coding'</span>, <span class="string">'Algorithms'</span>, <span class="string">'Web Dev'</span>],
+    isLearning: <span class="boolean">true</span>,
+    getQuote: <span class="keyword">function</span>() {
+        <span class="keyword">return</span> <span class="string">"Turning coffee into code."</span>;
+    }
+};
+
+student.<span class="method">getQuote</span>();</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <h2 class="section-title fade-in">About <span class="highlight">Me</span></h2>
+            <div class="about-container">
+                <div class="about-text fade-in">
+                    <p>I am currently pursuing a Bachelor of Computer Science degree. My journey in tech started with a simple "Hello World" in C, and since then, I've been fascinated by how lines of code can solve complex real-world problems.</p>
+                    <p>When I'm not studying core CS concepts like Data Structures, Operating Systems, or Database Management, you can find me building personal projects, exploring new frameworks, or participating in coding challenges.</p>
+                </div>
+                <div class="stats-container fade-in delay-1">
+                    <div class="stat-box glass">
+                        <h3>3+</h3>
+                        <p>Programming Languages</p>
+                    </div>
+                    <div class="stat-box glass">
+                        <h3>10+</h3>
+                        <p>Academic Projects</p>
+                    </div>
+                    <div class="stat-box glass">
+                        <h3>1000+</h3>
+                        <p>Hours of Coding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-padding">
+            <h2 class="section-title fade-in">My <span class="highlight">Arsenal</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category glass fade-in">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>C / C++</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category glass fade-in delay-1">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-category glass fade-in delay-2">
+                    <h3>Tools & Core</h3>
+                    <div class="skill-tags">
+                        <span>Git / GitHub</span>
+                        <span>Linux</span>
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>OOP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding">
+            <h2 class="section-title fade-in">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Library Management System</h3>
+                        <p class="project-desc">A comprehensive console-based application written in C to manage books, student records, and issuing/returning mechanics with file handling.</p>
+                        <div class="project-tech">
+                            <span>C</span>
+                            <span>File I/O</span>
+                            <span>Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass fade-in delay-1">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Sorting Visualizer</h3>
+                        <p class="project-desc">A web application built to visualize how different sorting algorithms (Bubble, Merge, Quick, etc.) work internally in real-time.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass fade-in delay-2">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Personal Portfolio</h3>
+                        <p class="project-desc">A modern, responsive portfolio website designed with glassmorphism and smooth animations to showcase my skills and projects.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Vanilla JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="contact-box glass fade-in">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <p>I'm currently looking for internship opportunities and open to collaborating on interesting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:your.email@example.com" class="btn btn-primary contact-btn">Say Hello</a>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by a BCS Student</p>
+        <p class="copyright">&copy; 2026 All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
