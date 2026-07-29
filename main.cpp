@@ -365,7 +365,7 @@ int main() {
     cout << "Initializing system..." << endl;
     
     // Generate initial data
-    generateDummyData(10);
+    generateDummyData(100);
     cout << "System ready!" << endl;
     
     char choice;
